@@ -33,12 +33,9 @@ const BlogScreen = () => {
       const response = await axios.post("https://dummyjson.com/posts/add", {
         title: "I am in love with someone.",
         userId: 5,
-        /* other post data */
       });
-      console.log(response.data); // log the response
-      // You can update the posts state to include the new post if needed
+      console.log(response.data);
 
-      // Show an alert when the blog post has been added successfully
       Alert.alert("Success", "Blog post has been added successfully!");
     } catch (error) {
       console.error("Error adding post:", error);

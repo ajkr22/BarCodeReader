@@ -27,10 +27,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f0f0f0", // Light background color
+    backgroundColor: "#f0f0f0",
   },
   button: {
-    backgroundColor: "#3498db", // Primary button color
+    backgroundColor: "#3498db",
     padding: 15,
     marginVertical: 10,
     borderRadius: 10,
@@ -38,10 +38,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   secondaryButton: {
-    backgroundColor: "#2ecc71", // Secondary button color
+    backgroundColor: "#2ecc71",
   },
   buttonText: {
-    color: "#fff", // Button text color
+    color: "#fff",
     fontWeight: "bold",
   },
 });

@@ -14,19 +14,16 @@ export default function App() {
     })();
   };
 
-  // Request Camera Permission
   useEffect(() => {
     askForCameraPermission();
   }, []);
 
-  // What happens when we scan the bar code
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
     setText(data);
     console.log("Type: " + type + "\nData: " + data);
   };
 
-  // Check permissions and return the screens
   if (hasPermission === null) {
     return (
       <View style={styles.container}>
@@ -46,7 +43,6 @@ export default function App() {
     );
   }
 
-  // Return the View
   return (
     <View style={styles.container}>
       <View style={styles.barcodebox}>
